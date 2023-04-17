@@ -1,0 +1,234 @@
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  
+  /* Style for the section titles */
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  #productDiv,
+  #sales_order_div {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the forms */
+  form {
+    margin: auto;
+    margin-top: 5rem;
+    width: 50%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Style for the inputs */
+  input[type="text"],
+  input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for the submit buttons */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style for the list buttons */
+  #list-products-btn,
+  #list-sales-orders-btn,
+  #add_order_detail {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 1rem 0;
+  }
+  
+  #list-products-btn:hover,
+  #list-sales-orders-btn:hover,
+  #add_order_detail:hover {
+    background-color: #006B8F;
+  }
+  
+  /* Style for the lists */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  li:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#navbar div{
+    margin-top: 1.5rem;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+}
+
+#navbar a:hover {
+    color: #f7b731;
+}
+hr{
+    border: 1px solid;
+}
+
+@media only screen and (max-width: 768px) {
+    /* CSS styles for devices with screen width of 768px or less */
+    #navbar {
+      /* Adjust navbar styles for smaller screens */
+      height: 50px;
+    }
+    #navbar h1 {
+      /* Reduce font size of navbar title for smaller screens */
+      font-size: 1.5rem;
+    }
+    #navbar div {
+      /* Adjust layout of navbar links for smaller screens */
+      flex-direction: column;
+    }
+    #navbar div a {
+      /* Adjust styling of navbar links for smaller screens */
+      padding: 5px 0;
+    }
+    #container {
+      /* Adjust layout of container for smaller screens */
+      padding: 10px;
+    }
+    #productDiv {
+      /* Adjust layout of productDiv for smaller screens */
+      display: flex;
+      flex-direction: column;
+    }
+    #productDiv form {
+      /* Adjust layout of product forms for smaller screens */
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 468px) {
+    /* CSS styles for devices with screen width of 768px or less */
+    #navbar {
+      /* Adjust navbar styles for smaller screens */
+      height: 50px;
+    }
+    #navbar h1 {
+      /* Reduce font size of navbar title for smaller screens */
+      font-size: medium;
+    }
+    #navbar div {
+      /* Adjust layout of navbar links for smaller screens */
+      flex-direction: column;
+    }
+    #navbar div a {
+      /* Adjust styling of navbar links for smaller screens */
+      padding: 5px 0;
+    }
+    #container {
+      /* Adjust layout of container for smaller screens */
+      padding: 10px;
+    }
+    #productDiv {
+      /* Adjust layout of productDiv for smaller screens */
+      display: flex;
+      flex-direction: column;
+    }
+    #productDiv form {
+      /* Adjust layout of product forms for smaller screens */
+      margin-bottom: 10px;
+    }
+    a{
+        /* Reduce font size of navbar title for smaller screens */
+        font-size: x-small;
+
+      }
+      h1{
+        font-size: medium;
+      }
+      form {
+        margin: auto;
+        margin-top: 5rem;
+        width: 90%;
+        padding: 0.5rem;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      li,ul{
+        font-size: small;
+      }
+      input[type="text"],
+      input[type="number"] {
+            display: block;
+            width: 90%;
+            padding: 0.5rem;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+    }
+      
+  }
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <title>Product Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1>Product Management System</h1>
+        <div>
+            <a href="index.html">Product Page</a>
+            <a href="order.html">Sale Order Page</a>
+        </div>
+       
+    </nav>
+ 
+    <div id="container">
+        <div id="productDiv">   
+            <form id="add-product-form">
+                <h2>Add a new product</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required><br><br>
+                <label for="brand-name">Brand Name:</label>
+                <input type="text" id="brand-name" name="brandName" required><br><br>
+                <label for="sale-price">Sale Price:</label>
+                <input type="number" id="sale-price" name="salePrice" required><br><br>
+                <label for="stock-quantity">Stock Quantity:</label>
+                <input type="number" id="stock-quantity" name="stockQuantity" required><br><br>
+                <button type="submit">Add Product</button>
+            </form>
+        
+            <form id="adjust-stock-form">
+                <h2>Adjust stock quantity of a product</h2>
+                <label for="product-id">Product ID:</label>
+                <input type="number" id="product-id" name="productId" required><br><br>
+                <label for="new-stock-quantity">New Stock Quantity:</label>
+                <input type="number" id="new-stock-quantity" name="newStockQuantity" required><br><br>
+                <button type="submit">Adjust Stock Quantity</button>
+            </form>
+        
+            <h2>List of all products</h2>
+            <button id="list-products-btn">List Products</button>
+            <ul id="product-list"></ul>
+
+        </div>
+    </div>
+</body>
+<Script src="index.js"></Script>
+</html>

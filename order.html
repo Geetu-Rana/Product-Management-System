@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Sales Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <nav id="navbar">
+        <h1>Product Management System</h1>
+        <div>
+            <a href="index.html">Product Page</a>
+            <a href="order.html">Sale Order Page</a>
+        </div>
+        
+    </nav>
+    
+    <form>
+      <h2>Add Sale Order</h2>
+      <label for="sales_id">Sales ID:</label>
+      <input type="number" id="sales_id" name="sales_id"><br><br>
+
+      <label for="customer" required>Customer:</label>
+      <input type="text" id="customer" name="customer"><br><br>
+
+      <div id="order_details">
+        <div class="order_detail">
+          <label for="product_id_0" required>Product ID:</label>
+          <input type="number" id="product_id_0" name="product_id_0"><br><br>
+
+          <label for="sale_quantity_0" required>Sale Quantity:</label>
+          <input type="number" id="sale_quantity_0" name="sale_quantity_0"><br><br>
+
+          <label for="discount_0" required>Discount:</label>
+          <input type="number" id="discount_0" name="discount_0"><br><br>
+
+          <hr>
+        </div>
+      </div>
+
+      <button type="button" id="add_order_detail">Add Order Detail</button><br><br>
+
+      <button type="submit" id="formSubmit">Submit</button>
+    </form>\
+
+    
+    <h1>List of all sales orders</h1>
+    <button id="list-sales-orders-btn" >List Sales Orders</button>
+    <ul id="sales-order-list"></ul>
+  </body>
+  <script src="script.js"></script>
+</html>
+
